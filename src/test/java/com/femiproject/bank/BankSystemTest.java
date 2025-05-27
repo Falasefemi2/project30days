@@ -1,5 +1,8 @@
 package com.femiproject.bank;
 
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
@@ -15,21 +18,18 @@ public class BankSystemTest {
 
         Thread.sleep(1000);
 
-        assertNotNull(bankSystem.authUser("femi", "123"));
+        assertNotNull(bankSystem.authUser("femi", "1234"));
         assertNull(bankSystem.authUser("femi", "wrong"), "Auth should fail with wrong password");
     }
 
     @Test
-    void testCreateUser() throws InterruptedException {
-
+    void testCreateUser() throws InterruptedException, ExecutionException {
         BankSystem bankSystem = new BankSystem();
-        bankSystem.createUser("femi", "password123");
-        Thread.sleep(1000);
-
-        User user = bankSystem.authUser("femi", "password123");
-
+        Future<Void> future = bankSystem.createUser("yinka", "password123");
+        future.get(); // Wait for completion
+        User user = bankSystem.authUser("yinka", "password123");
         assertNotNull(user, "User should be created and authenticated");
-        assertEquals("femi", user.getUsername());
+        assertEquals("yinka", user.getUsername());
     }
 
     @Test

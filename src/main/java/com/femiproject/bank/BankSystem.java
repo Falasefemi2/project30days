@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -93,22 +94,22 @@ public class BankSystem {
                 .orElse(null);
     }
 
-    public void createUser(String username, String password) {
-        service.submit(() -> {
+    public Future<Void> createUser(String username, String password) {
+        return service.submit(() -> {
             synchronized (lock) {
                 if (username == null || password == null || username.trim().isEmpty() || password.trim().isEmpty()) {
                     System.out.println("Account creation failed: Invalid input");
-                    return;
+                    return null;
                 }
                 if (findUser(username) != null) {
                     System.out.println("Account creation failed: Username already exists");
-                    return;
+                    return null;
                 }
-
                 User newUser = new User(username, password);
                 users.add(newUser);
                 saveUsers();
                 System.out.println("Account created successfully for: " + username);
+                return null;
             }
         });
     }
