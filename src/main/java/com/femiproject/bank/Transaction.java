@@ -11,6 +11,9 @@ public class Transaction {
     private String receiverName;
     private LocalDateTime timeStamp;
 
+    public Transaction() {
+    }
+
     public Transaction(TransactionType type, double amount) {
         this.type = type;
         this.amount = amount;
