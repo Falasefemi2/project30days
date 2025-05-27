@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Transaction.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">project30days</a> &gt; <a href="index.source.html" class="el_package">com.femiproject.bank</a> &gt; <span class="el_source">Transaction.java</span></div><h1>Transaction.java</h1><pre class="source lang-java linenums">package com.femiproject.bank;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class Transaction {
+
+    private TransactionType type;
+    private double amount;
+    private String senderName;
+    private String receiverName;
+    private LocalDateTime timeStamp;
+
+<span class="nc" id="L14">    public Transaction(TransactionType type, double amount) {</span>
+<span class="nc" id="L15">        this.type = type;</span>
+<span class="nc" id="L16">        this.amount = amount;</span>
+<span class="nc" id="L17">        this.senderName = null;</span>
+<span class="nc" id="L18">        this.receiverName = null;</span>
+<span class="nc" id="L19">        this.timeStamp = LocalDateTime.now();</span>
+<span class="nc" id="L20">    }</span>
+
+<span class="nc" id="L22">    public Transaction(TransactionType type, double amount, String senderName, String receiverName) {</span>
+<span class="nc" id="L23">        this.type = type;</span>
+<span class="nc" id="L24">        this.amount = amount;</span>
+<span class="nc" id="L25">        this.senderName = senderName;</span>
+<span class="nc" id="L26">        this.receiverName = receiverName;</span>
+<span class="nc" id="L27">        this.timeStamp = LocalDateTime.now();</span>
+<span class="nc" id="L28">    }</span>
+
+<span class="nc" id="L30">    public Transaction(TransactionType type, double amount, String accountName) {</span>
+<span class="nc" id="L31">        this.type = type;</span>
+<span class="nc" id="L32">        this.amount = amount;</span>
+<span class="nc bnc" id="L33" title="All 2 branches missed.">        if (type == TransactionType.DEPOSIT) {</span>
+<span class="nc" id="L34">            this.receiverName = accountName;</span>
+<span class="nc" id="L35">            this.senderName = null;</span>
+<span class="nc bnc" id="L36" title="All 2 branches missed.">        } else if (type == TransactionType.WITHDRAW) {</span>
+<span class="nc" id="L37">            this.senderName = accountName;</span>
+<span class="nc" id="L38">            this.receiverName = null;</span>
+        }
+<span class="nc" id="L40">        this.timeStamp = LocalDateTime.now();</span>
+<span class="nc" id="L41">    }</span>
+
+    @Override
+    public String toString() {
+
+<span class="nc" id="L46">        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss&quot;);</span>
+<span class="nc" id="L47">        String dateStr = timeStamp.format(formatter);</span>
+
+<span class="nc" id="L49">        StringBuilder sb = new StringBuilder();</span>
+<span class="nc" id="L50">        sb.append(&quot;Transaction [type=&quot;).append(type)</span>
+<span class="nc" id="L51">                .append(&quot;, amount=&quot;).append(amount);</span>
+
+<span class="nc bnc" id="L53" title="All 2 branches missed.">        if (senderName != null) {</span>
+<span class="nc" id="L54">            sb.append(&quot;, senderName=&quot;).append(senderName);</span>
+        }
+<span class="nc bnc" id="L56" title="All 2 branches missed.">        if (receiverName != null) {</span>
+<span class="nc" id="L57">            sb.append(&quot;, receiverName=&quot;).append(receiverName);</span>
+        }
+
+<span class="nc" id="L60">        sb.append(&quot;, timeStamp=&quot;).append(dateStr).append(&quot;]&quot;);</span>
+<span class="nc" id="L61">        return sb.toString();</span>
+    }
+
+    public TransactionType getType() {
+<span class="nc" id="L65">        return type;</span>
+    }
+
+    public double getAmount() {
+<span class="nc" id="L69">        return amount;</span>
+    }
+
+    public String getSenderName() {
+<span class="nc" id="L73">        return senderName;</span>
+    }
+
+    public String getReceiverName() {
+<span class="nc" id="L77">        return receiverName;</span>
+    }
+
+    public LocalDateTime getTimeStamp() {
+<span class="nc" id="L81">        return timeStamp;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
