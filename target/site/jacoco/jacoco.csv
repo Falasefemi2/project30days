@@ -1,5 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-project30days,com.femiproject,App,4,0,0,0,2,0,1,0,1,0
-project30days,com.femiproject.bank,User,41,0,0,0,12,0,3,0,3,0
-project30days,com.femiproject.bank,TransactionType,27,0,0,0,5,0,1,0,1,0
-project30days,com.femiproject.bank,Transaction,137,0,8,0,41,0,13,0,9,0
