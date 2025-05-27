@@ -26,3 +26,11 @@ This challenge is designed to:
 - Balance inquiries
 - Transaction history tracking
 - User authentication and security
+
+## Project 2: Task Tracker
+
+- Project 2: Task Tracker
+- Project Name: Task-Tracker
+- Day: 2/30
+- Type: Command Line Interface Application
+- Description: Task tracker is a project used to track and manage your tasks. In this task, you will build a simple command line interface (CLI) to track what you need to do, what you have done, and what you are currently working on. This project will help you practice your programming skills, including working with the filesystem, handling user inputs, and building a simple CLI application.
