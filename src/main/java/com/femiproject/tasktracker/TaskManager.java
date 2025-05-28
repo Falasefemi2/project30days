@@ -39,15 +39,14 @@ public class TaskManager {
                 .orElse(null);
     }
 
-    public void updateTask(String id, String description) {
+    public boolean updateTask(String id, String description) {
         Task task = findTaskByID(id);
         if (task == null) {
-            System.out.println("Task not found.");
-            return;
+            return false;
         }
         task.setDescription(description);
         saveTasks();
-        System.out.println("Task updated successfully.");
+        return true;
     }
 
     public void deleteTask(String id) {
@@ -61,15 +60,14 @@ public class TaskManager {
         System.out.println("Task deleted successfully.");
     }
 
-    public void markTask(StatusEnum statusEnum, String id) {
+    public boolean markTask(StatusEnum statusEnum, String id) {
         Task task = findTaskByID(id);
         if (task == null) {
-            System.out.println("Task not found.");
-            return;
+            return false;
         }
         task.setStatus(statusEnum);
         saveTasks();
-        System.out.println("Mark task as in progressor done");
+        return true;
     }
 
     public void listAllTask() {
@@ -82,10 +80,18 @@ public class TaskManager {
         }
     }
 
-    public void listTaskByStatus(StatusEnum status) {
-        List<Task> tasksByStatus = tasks.stream()
+    public List<Task> getAllTasks() {
+        return new ArrayList<>(tasks);
+    }
+
+    public List<Task> getTasksByStatus(StatusEnum status) {
+        return tasks.stream()
                 .filter(t -> t.getStatus().equals(status))
                 .collect(Collectors.toList());
+    }
+
+    public void listTaskByStatus(StatusEnum status) {
+        List<Task> tasksByStatus = getTasksByStatus(status);
         if (tasksByStatus.isEmpty()) {
             System.out.println("No task found with status: " + status.name());
         } else {
