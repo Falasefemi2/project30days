@@ -11,9 +11,6 @@ import java.net.http.HttpResponse;
  */
 public final class App {
 
-    private App() {
-    }
-
     /**
      * Says hello to the world.
      *

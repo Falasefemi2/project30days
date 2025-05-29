@@ -68,7 +68,8 @@ public class GithubActivity {
 
         for (Map<String, Object> event : events) {
             String eventType = (String) event.get("type");
-            Map<String, Object> repo = (Map<String, Object>) event.get("repo");
+            Map<String, Object> repo = objectMapper.convertValue(event.get("repo"), new TypeReference<Map<String, Object>>() {
+            });
             String repoName = repo != null ? (String) repo.get("name") : "unknown";
 
             String formattedEvent = formatEvent(eventType, event, repoName);
@@ -81,7 +82,8 @@ public class GithubActivity {
     private String formatEvent(String eventType, Map<String, Object> event, String repoName) {
         switch (eventType) {
             case "PushEvent" -> {
-                Map<String, Object> payload = (Map<String, Object>) event.get("payload");
+                Map<String, Object> payload = objectMapper.convertValue(event.get("payload"), new TypeReference<Map<String, Object>>() {
+                });
                 if (payload != null) {
                     Object commitsObj = payload.get("commits");
                     int commitCount = 0;
@@ -95,7 +97,8 @@ public class GithubActivity {
             }
 
             case "IssuesEvent" -> {
-                Map<String, Object> issuePayload = (Map<String, Object>) event.get("payload");
+                Map<String, Object> issuePayload = objectMapper.convertValue(event.get("payload"), new TypeReference<Map<String, Object>>() {
+                });
                 if (issuePayload != null) {
                     String action = (String) issuePayload.get("action");
                     if ("opened".equals(action)) {
@@ -113,7 +116,8 @@ public class GithubActivity {
             }
 
             case "CreateEvent" -> {
-                Map<String, Object> createPayload = (Map<String, Object>) event.get("payload");
+                Map<String, Object> createPayload = objectMapper.convertValue(event.get("payload"), new TypeReference<Map<String, Object>>() {
+                });
                 if (createPayload != null) {
                     String refType = (String) createPayload.get("ref_type");
                     if ("repository".equals(refType)) {
@@ -127,7 +131,8 @@ public class GithubActivity {
             }
 
             case "DeleteEvent" -> {
-                Map<String, Object> deletePayload = (Map<String, Object>) event.get("payload");
+                Map<String, Object> deletePayload = objectMapper.convertValue(event.get("payload"), new TypeReference<Map<String, Object>>() {
+                });
                 if (deletePayload != null) {
                     String refType = (String) deletePayload.get("ref_type");
                     String ref = (String) deletePayload.get("ref");
@@ -141,7 +146,8 @@ public class GithubActivity {
             }
 
             case "PullRequestEvent" -> {
-                Map<String, Object> prPayload = (Map<String, Object>) event.get("payload");
+                Map<String, Object> prPayload = objectMapper.convertValue(event.get("payload"), new TypeReference<Map<String, Object>>() {
+                });
                 if (prPayload != null) {
                     String action = (String) prPayload.get("action");
                     if ("opened".equals(action)) {
