@@ -1,11 +1,13 @@
 package com.femiproject.githubuser;
 
+import java.io.IOException;
+
 public class Main {
 
     public static void main(String[] args) {
         if (args.length == 0) {
             System.err.println("Usage: github-activity <username>");
-            System.exit(1);
+            return;
         }
 
         String username = args[0];
@@ -14,9 +16,8 @@ public class Main {
 
         try {
             githubActivity.fetchAndDisplayActivity(username);
-        } catch (Exception e) {
+        } catch (IOException | InterruptedException e) {
             System.err.println("Error: " + e.getMessage());
-            System.exit(1);
         }
     }
 }

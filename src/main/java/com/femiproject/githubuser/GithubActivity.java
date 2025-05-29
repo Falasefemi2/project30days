@@ -32,7 +32,7 @@ public class GithubActivity {
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
             if (response.statusCode() == 404) {
-                throw new RuntimeException("User '" + username + "' not found");
+                throw new IOException("User '" + username + "' not found. GitHub API returned 404.");
             } else if (response.statusCode() != 200) {
                 throw new RuntimeException("Failed to fetch data. HTTP status: " + response.statusCode());
             }
