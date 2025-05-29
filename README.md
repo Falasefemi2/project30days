@@ -34,3 +34,10 @@ This challenge is designed to:
 - Day: 2/30
 - Type: Command Line Interface Application
 - Description: Task tracker is a project used to track and manage your tasks. In this task, you will build a simple command line interface (CLI) to track what you need to do, what you have done, and what you are currently working on. This project will help you practice your programming skills, including working with the filesystem, handling user inputs, and building a simple CLI application.
+
+## Project 3: GitHub User Activity
+
+- Project 3: Gitgub User Activity
+- Dat: 3/30
+- Type: Command Line Interface Application
+- Description: In this project, i build a simple command line interface (CLI) to fetch the recent activity of a GitHub user and display it in the terminal. This project will helped me practice my programming skills, including working with APIs, handling JSON data, and building a simple CLI application.
