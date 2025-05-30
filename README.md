@@ -38,6 +38,13 @@ This challenge is designed to:
 ## Project 3: GitHub User Activity
 
 - Project 3: Gitgub User Activity
-- Dat: 3/30
+- Day: 3/30
 - Type: Command Line Interface Application
 - Description: In this project, i build a simple command line interface (CLI) to fetch the recent activity of a GitHub user and display it in the terminal. This project will helped me practice my programming skills, including working with APIs, handling JSON data, and building a simple CLI application.
+
+## Project 4: Expense Tracker
+
+- Project 4: Expense Tracker
+- Day: 4/30
+- Type: Command Line Interface Application
+- Description: Build a simple expense tracker application to manage your finances. The application should allow users to add, delete, and view their expenses. The application should also provide a summary of the expenses.

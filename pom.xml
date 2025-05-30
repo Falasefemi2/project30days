@@ -84,6 +84,13 @@
       <version>5.18.0</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+    <dependency>
+      <groupId>com.opencsv</groupId>
+      <artifactId>opencsv</artifactId>
+      <version>5.11</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

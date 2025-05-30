@@ -323,7 +323,7 @@ public class GithubActivityTest {
                     .thenReturn(mockResponse);
 
             // When & Then
-            RuntimeException exception = assertThrows(RuntimeException.class, () -> {
+            IOException exception = assertThrows(IOException.class, () -> {
                 githubActivity.fetchAndDisplayActivity(username);
             });
 
