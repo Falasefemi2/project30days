@@ -68,6 +68,10 @@ public class ExpenseTracker {
         this.amount = amount;
     }
 
+    public String toSummaryString() {
+        return description + "," + amount;
+    }
+
     @Override
     public String toString() {
         return "ExpenseTracker [id=" + id + ", description=" + description + ", amount=" + amount + ", date=" + date + "]";
