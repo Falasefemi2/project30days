@@ -48,3 +48,10 @@ This challenge is designed to:
 - Day: 4/30
 - Type: Command Line Interface Application
 - Description: Build a simple expense tracker application to manage your finances. The application should allow users to add, delete, and view their expenses. The application should also provide a summary of the expenses.
+
+## Project 5: Number Guessing Game
+
+- Project 5: Number Guessing Game
+- Day: 5/30
+- Type: Command Line Interface Application
+- Description: Build a simple number guessing game where the computer randomly selects a number and the user has to guess it. The user will be given a limited number of chances to guess the number. If the user guesses the number correctly, the game will end, and the user will win. Otherwise, the game will continue until the user runs out of chances.
