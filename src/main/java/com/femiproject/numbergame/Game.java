@@ -9,9 +9,13 @@ public class Game {
     private final Random random;
     private DifficultyLevel difficultyLevel;
 
+    public Game(Scanner scanner, Random random) {
+        this.scanner = scanner;
+        this.random = random;
+    }
+
     public Game() {
-        this.scanner = new Scanner(System.in);
-        this.random = new Random();
+        this(new Scanner(System.in), new Random());
     }
 
     public void start() {
