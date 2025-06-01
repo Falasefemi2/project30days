@@ -55,3 +55,17 @@ This challenge is designed to:
 - Day: 5/30
 - Type: Command Line Interface Application
 - Description: Build a simple number guessing game where the computer randomly selects a number and the user has to guess it. The user will be given a limited number of chances to guess the number. If the user guesses the number correctly, the game will end, and the user will win. Otherwise, the game will continue until the user runs out of chances.
+
+## Project 6: Unit Converter
+
+Unit converter to convert between different units of measurement.
+
+- Project 6: Unit Converter
+- Day: 6/30
+- Type: Command Line Interface Applciation
+- Description: A CLI tool where user can input a value to convert, select the unit to convert from and to, and view the converted value.
+
+- The user can input a value to convert.
+- The user can select the units to convert from and to.
+- The user can view the converted value.
+- The user can convert between different units of measurement like length, weight, temperature, etc
