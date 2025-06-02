@@ -24,7 +24,7 @@ This application is a two-player Tic-Tac-Toe game that runs entirely from the co
 
 - Java Sockets (TCP): Implements client-server communication using TCP sockets to exchange moves.
 
--Game Logic: Modular structure with clear separation between networking logic and game mechanics (e.g., board state, win conditions).
+- Game Logic: Modular structure with clear separation between networking logic and game mechanics (e.g., board state, win conditions).
 
 - Input Validation: Ensures robustness against invalid moves and unexpected inputs.
 
