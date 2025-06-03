@@ -1,7 +1,6 @@
 package com.femiproject.expensetracker;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 public class ExpenseTracker {
 

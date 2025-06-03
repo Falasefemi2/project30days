@@ -78,3 +78,12 @@ A tic-tac-toe game involving 2 players
 - Day: 7/30
 - Type: Command-Line Interface (CLI) Application
 - Description: A multiplayer Tic-Tac-Toe game built as a command-line application that allows two players to compete in real time over a network. This project uses Java sockets to establish a client-server architecture, enabling seamless communication between players without relying on a database or web-based technologies. The game logic ensures turn-based play, input validation, and win/draw detection, providing a smooth and interactive experience for users on the terminal.
+
+## Project 8: Student Management System
+
+A cli student management system to add, delete students also add subject and grades.
+
+- Project 8: Student Management system
+- Day: 8/30
+- Type: Command-Line Interface (CLI) Application
+- Description: Build a cli tool for storing student name, subject and grade. The project made use of Java collection, Jackson to store JSON.
