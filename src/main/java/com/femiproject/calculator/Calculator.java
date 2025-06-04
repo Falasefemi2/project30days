@@ -120,10 +120,12 @@ public class Calculator extends WindowAdapter implements ActionListener {
         f.setVisible(true);
     }
 
+    @Override
     public void windowClosing(WindowEvent e) {
         f.dispose();
     }
 
+    @Override
     public void actionPerformed(ActionEvent e) {
         String z, zt;
         // NUMBER BUTTON
