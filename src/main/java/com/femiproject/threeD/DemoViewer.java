@@ -14,6 +14,7 @@ import javax.swing.JSlider;
 import javax.swing.SwingConstants;
 
 public class DemoViewer {
+
     public static void main(String[] args) {
         JFrame frame = new JFrame("3D Viewer");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -60,16 +61,16 @@ public class DemoViewer {
                 double pitch = Math.toRadians(pitchSlider.getValue());
 
                 // Create rotation matrices
-                Matrix3 headingTransform = new Matrix3(new double[] {
-                        Math.cos(heading), 0, -Math.sin(heading),
-                        0, 1, 0,
-                        Math.sin(heading), 0, Math.cos(heading)
+                Matrix3 headingTransform = new Matrix3(new double[]{
+                    Math.cos(heading), 0, -Math.sin(heading),
+                    0, 1, 0,
+                    Math.sin(heading), 0, Math.cos(heading)
                 });
 
-                Matrix3 pitchTransform = new Matrix3(new double[] {
-                        1, 0, 0,
-                        0, Math.cos(pitch), Math.sin(pitch),
-                        0, -Math.sin(pitch), Math.cos(pitch)
+                Matrix3 pitchTransform = new Matrix3(new double[]{
+                    1, 0, 0,
+                    0, Math.cos(pitch), Math.sin(pitch),
+                    0, -Math.sin(pitch), Math.cos(pitch)
                 });
 
                 // Combine transformations (pitch first, then heading)

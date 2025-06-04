@@ -1,6 +1,7 @@
 package com.femiproject.threeD;
 
 public class Matrix3 {
+
     double[] values;
 
     Matrix3(double[] values) {
