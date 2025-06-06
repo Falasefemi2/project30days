@@ -88,7 +88,7 @@ A cli student management system to add, delete students also add subject and gra
 - Type: Command-Line Interface (CLI) Application
 - Description: Build a cli tool for storing student name, subject and grade. The project made use of Java collection, Jackson to store JSON.
 
-## Project 8: Java Calulator
+## Project 9: Java Calulator
 
 A simple calculator application built with Java AWT (Abstract Window Toolkit).
 
@@ -96,3 +96,13 @@ A simple calculator application built with Java AWT (Abstract Window Toolkit).
 - Day: 9/30;
 - Type: Java AWT (Abstract Window Toolkit)
 - Description: Build a AWT calculator that does basic arithmetic.
+
+## Project 10: Contact book cli
+
+A simple Command Line Interface (CLI) application in Java for managing contacts.  
+Supports adding, updating, deleting, and searching contacts, with the ability to persist data using JSON or CSV file storage.
+
+- Project 10: Contact book cli
+- Day: 10/30
+- Type: Command-Line Interface (CLI) Application
+- Description: Build a cli tool for storing contact name, phone, email and address, Jackson to store JSON.
