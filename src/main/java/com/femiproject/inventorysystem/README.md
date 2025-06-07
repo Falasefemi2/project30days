@@ -34,7 +34,7 @@ A command-line based inventory management system built in Java that helps track 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/inventory-system.git
+git clone https://github.com/Falasefemi2/project30days.git
 cd inventory-system
 ```
 
