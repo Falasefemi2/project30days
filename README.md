@@ -97,13 +97,13 @@ A simple calculator application built with Java AWT (Abstract Window Toolkit).
 - Type: Java AWT (Abstract Window Toolkit)
 - Description: Build a AWT calculator that does basic arithmetic.
 
-## Project 10: Contact book cli
+## Project 11: Contact book cli
 
 A simple Command Line Interface (CLI) application in Java for managing contacts.  
 Supports adding, updating, deleting, and searching contacts, with the ability to persist data using JSON or CSV file storage.
 
 - Project 10: Contact book cli
-- Day: 10/30
+- Day: 11/30
 - Type: Command-Line Interface (CLI) Application
 - Description: Build a cli tool for storing contact name, phone, email and address, Jackson to store JSON.
 
@@ -111,7 +111,16 @@ Supports adding, updating, deleting, and searching contacts, with the ability to
 
 A command-line based inventory management system built in Java that helps track products, manage stock levels, and monitor inventory value.
 
-- Project 11: Inventory management CLI
-- Day: 11/30
+- Project 12: Inventory management CLI
+- Day: 12/30
 - Type: Command-Line Interface (CLI) Application
 - Description: Build a cli tool for storing inventory lsit, Jackson to store JSON.
+
+## Project 13: TodoList App CLI
+
+A command-line based todolist system built in Java that helps to add new task with description, priorities, and deadlines
+
+- Project 13: TodoList App CLI
+- Day: 13/30
+- Type: Command-Line Interface (CLI) Application
+- Description: Build a cli tool for storing new task, Jackson to store JSON
