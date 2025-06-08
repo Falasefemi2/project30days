@@ -107,7 +107,7 @@ Supports adding, updating, deleting, and searching contacts, with the ability to
 - Type: Command-Line Interface (CLI) Application
 - Description: Build a cli tool for storing contact name, phone, email and address, Jackson to store JSON.
 
-## Project 11: Inventory Management system CLI
+## Project 12: Inventory Management system CLI
 
 A command-line based inventory management system built in Java that helps track products, manage stock levels, and monitor inventory value.
 
