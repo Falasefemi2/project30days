@@ -124,3 +124,12 @@ A command-line based todolist system built in Java that helps to add new task wi
 - Day: 13/30
 - Type: Command-Line Interface (CLI) Application
 - Description: Build a cli tool for storing new task, Jackson to store JSON
+
+## Project 14: Password Generator
+
+A command-line to generate password and check password strength
+
+- Project 14: Password Generator
+- Day: 14/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: Build a cli tool for generatiing password and checking strength of password.
