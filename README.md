@@ -133,3 +133,12 @@ A command-line to generate password and check password strength
 - Day: 14/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: Build a cli tool for generatiing password and checking strength of password.
+
+## Project 15: Weather & Stocks Report
+
+A command-line that monitors weather conditions and stock prices, providing real time updates.
+
+- Project 15: Weather & Stocks Report
+- Day: 15/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A Java application that concurrently monitors weather conditions and stock prices, providing real-time updates in a formatted console output.

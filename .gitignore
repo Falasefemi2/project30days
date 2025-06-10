@@ -9,3 +9,4 @@ contact.json
 contacts.csv
 inventory.json
 tasks.json
+.env
