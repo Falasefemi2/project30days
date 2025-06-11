@@ -26,15 +26,16 @@ src/
 
 ## 🧪 Example Usage
 
-# Start the server
+## Start the server
 
-$ java com.femiproject.chat.ServerMain
+```bash
+java com.femiproject.chat.ServerMain
 Chat server running on port 8887
 Press enter to stop.
 
-# Start a client
 
-```bash
+## Start a client
+
 java com.femiproject.chat.ClientMain
 Enter your username:
 Femi
