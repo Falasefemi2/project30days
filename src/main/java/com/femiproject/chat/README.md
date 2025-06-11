@@ -34,7 +34,8 @@ Press enter to stop.
 
 # Start a client
 
-$ java com.femiproject.chat.ClientMain
+```bash
+java com.femiproject.chat.ClientMain
 Enter your username:
 Femi
 Enter server address (default: localhost):
@@ -44,3 +45,4 @@ Enter server port (default: 8887):
 Connecting to ws://localhost:8887....
 Connected to the server
 Type your message (or 'quit' to exit)
+```
