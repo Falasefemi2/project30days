@@ -142,3 +142,12 @@ A command-line that monitors weather conditions and stock prices, providing real
 - Day: 15/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A Java application that concurrently monitors weather conditions and stock prices, providing real-time updates in a formatted console output.
+
+## Project 16: Java CLI Chat App using WebSockets
+
+A lightweight command-line chat application built in Java
+
+- project 16: Java CLI Chat App using websockets
+- Day: 16/ 30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A Java application that sends real-time message via websockets
