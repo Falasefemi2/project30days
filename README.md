@@ -151,3 +151,12 @@ A lightweight command-line chat application built in Java
 - Day: 16/ 30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A Java application that sends real-time message via websockets
+
+## Project 17: Java CLI Group chat application
+
+A lightweight, real-time command-line chat application built in Java using WebSockets.
+
+- Project: Java CLI Group Chat with WebSockets
+- Day: 17/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A simple yet effective group chat system that allows multiple users to communicate in real time using WebSockets over the terminal. Users can join rooms, send messages, and interact through a responsive CLI.
