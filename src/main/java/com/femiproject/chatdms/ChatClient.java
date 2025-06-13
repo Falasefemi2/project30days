@@ -17,7 +17,7 @@ public class ChatClient extends WebSocketClient {
     }
 
     private void startClientThread() {
-        Thread thread = new Thread(() -> {
+        Thread thread = Thread.startVirtualThread(() -> {
             while (isConnected) {
                 if (!scanner.hasNextLine()) {
                     continue;
