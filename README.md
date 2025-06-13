@@ -160,3 +160,12 @@ A lightweight, real-time command-line chat application built in Java using WebSo
 - Day: 17/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A simple yet effective group chat system that allows multiple users to communicate in real time using WebSockets over the terminal. Users can join rooms, send messages, and interact through a responsive CLI.
+
+## Project 18: ChatDMS - WebSocket-based chat application
+
+A real-time chat application with private messaging capabilities built using Java WebSocket.
+
+- Project: ChatDMS - With websockets
+- Day: 18/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A simple yet effective group chat system that allows multiple users to communicate in real time in thier private dm.
