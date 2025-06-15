@@ -169,3 +169,12 @@ A real-time chat application with private messaging capabilities built using Jav
 - Day: 18/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A simple yet effective group chat system that allows multiple users to communicate in real time in thier private dm.
+
+## Project 20: Java Web Scraper
+
+A CLI tool to scrap website
+
+- Project: Java Web Scraper
+- DAY: 20/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A flexible web scraping tool built in Java that allows you to extract articles from any website using custom CSS selectors.
