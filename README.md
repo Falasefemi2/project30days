@@ -175,6 +175,15 @@ A real-time chat application with private messaging capabilities built using Jav
 A CLI tool to scrap website
 
 - Project: Java Web Scraper
-- DAY: 20/30
+- Day: 20/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A flexible web scraping tool built in Java that allows you to extract articles from any website using custom CSS selectors.
+
+## QR Code Manager
+
+A simple, menu-driven Java application for generating, viewing, and extracting information from QR codes using the ZXing library.
+
+- Project: QR Code Manager
+- Day: 21/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A project to generate QR code and view QR code.
