@@ -179,7 +179,7 @@ A CLI tool to scrap website
 - Type: Command-Line Interfac (CLI) Application
 - Description: A flexible web scraping tool built in Java that allows you to extract articles from any website using custom CSS selectors.
 
-## QR Code Manager
+## Project 21: QR Code Manager
 
 A simple, menu-driven Java application for generating, viewing, and extracting information from QR codes using the ZXing library.
 
