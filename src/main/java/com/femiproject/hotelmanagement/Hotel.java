@@ -280,7 +280,7 @@ public class Hotel {
             return;
         }
 
-        Food food = new Food(foodType, foodType.getItemPrice() * quantity);
+        Food food = new Food(foodType, (double) foodType.getItemPrice() * quantity);
 
         // For Single room
         if (roomType == RoomType.SINGLE) {
