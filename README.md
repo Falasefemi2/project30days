@@ -187,3 +187,12 @@ A simple, menu-driven Java application for generating, viewing, and extracting i
 - Day: 21/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A project to generate QR code and view QR code.
+
+## Project 22: Hotel Management system
+
+A simple CLI-tool that handle room booking, guests registration and food ordering.
+
+- Project: Hotel Management system
+- Day: 22/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A project to handle room booking, guest management and food ordering.
