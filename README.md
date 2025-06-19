@@ -196,3 +196,12 @@ A simple CLI-tool that handle room booking, guests registration and food orderin
 - Day: 22/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A project to handle room booking, guest management and food ordering.
+
+## Project 23: Food Ordering Service
+
+A simple Java-based food ordering system that allows users to browse restaurants, view menus, and place orders.
+
+- Project: Food Ordering service
+- Day: 23/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A project that allow user to login and order food from restaurants.

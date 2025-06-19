@@ -11,3 +11,6 @@ inventory.json
 tasks.json
 .env
 hotel_data.json
+order_data.json
+restaurant_data.json
+user_data.json
