@@ -205,3 +205,12 @@ A simple Java-based food ordering system that allows users to browse restaurants
 - Day: 23/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A project that allow user to login and order food from restaurants.
+
+## Project 24: E-commerce System
+
+A simple CLI-based e-commerce system for buyers and suppliers to buy goods and post goods
+
+- Project: E-commerce system
+- Day: 24/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A project that allow supplier to post their goods and buyers to buy the goods.
