@@ -223,3 +223,12 @@ A simple library system to allow librarians to add books and members.
 - Day: 25/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: This is a simple Library Management System implemented in Java. It allows librarians to manage books and members, and provides basic library operations.
+
+## Project 26: Clinic Management System
+
+A comprehensive Java-based clinic management system that handles doctors, patients, and appointments with a command-line interface.
+
+- Project: Clinic management system
+- Day: 26/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A CLI tool for a clinic that makes patient book a doctor for an appointment

@@ -18,3 +18,6 @@ admin_file.json
 products.json
 library.json
 members.json
+appointments.json
+doctors.json
+patients.json
