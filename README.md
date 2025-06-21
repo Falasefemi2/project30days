@@ -214,3 +214,12 @@ A simple CLI-based e-commerce system for buyers and suppliers to buy goods and p
 - Day: 24/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A project that allow supplier to post their goods and buyers to buy the goods.
+
+## Project 25: Library System
+
+A simple library system to allow librarians to add books and members.
+
+- Project: Library System
+- Day: 25/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: This is a simple Library Management System implemented in Java. It allows librarians to manage books and members, and provides basic library operations.
