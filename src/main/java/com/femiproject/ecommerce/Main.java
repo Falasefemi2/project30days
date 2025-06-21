@@ -11,7 +11,6 @@ public class Main {
         System.out.println("    Welcome to Femi's E-commerce System   ");
         System.out.println("===========================================");
 
-        // Main application loop
         while (true) {
             showMainMenu();
             int choice = getUserChoice();
@@ -41,11 +40,11 @@ public class Main {
     private static int getUserChoice() {
         try {
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
             return choice;
         } catch (Exception e) {
-            scanner.nextLine(); // Clear invalid input
-            return -1; // Return invalid choice
+            scanner.nextLine();
+            return -1;
         }
     }
 
@@ -75,7 +74,6 @@ public class Main {
         if (!loginSuccess) {
             System.out.println("\nLogin failed. Please try again or register a new account.");
 
-            // Offer options after failed login
             System.out.println("\nWhat would you like to do?");
             System.out.println("1. Try login again");
             System.out.println("2. Register new account");
@@ -85,24 +83,21 @@ public class Main {
             int choice = getUserChoice();
             switch (choice) {
                 case 1:
-                    loginUser(); // Recursive call to try again
+                    loginUser();
                     break;
                 case 2:
                     registerNewUser();
                     break;
                 case 3:
                 default:
-                    // Return to main menu
                     break;
             }
         }
-        // If login successful, the Admin class handles the user dashboard
     }
 
     private static void viewSystemStats() {
         System.out.println("\n=== SYSTEM STATISTICS ===");
 
-        // You can expand this to show actual statistics
         System.out.println("📊 System Overview:");
         System.out.println("• E-commerce platform for buyers and suppliers");
         System.out.println("• Suppliers can upload and manage products");
@@ -131,28 +126,11 @@ public class Main {
         System.out.println("            See you again soon!           ");
         System.out.println("===========================================");
 
-        // Close scanner to prevent resource leak
         scanner.close();
     }
 
     private static void pauseForUser() {
         System.out.print("\nPress Enter to continue...");
         scanner.nextLine();
-    }
-
-    // Optional: Method to handle application startup messages
-    private static void showWelcomeMessage() {
-        System.out.println("🛍️  Starting E-commerce System...");
-        System.out.println("📂 Loading user data...");
-        System.out.println("📦 Loading product catalog...");
-        System.out.println("✅ System ready!");
-        System.out.println();
-    }
-
-    // Optional: Method to handle graceful shutdown
-    private static void handleShutdown() {
-        // Add any cleanup code here if needed
-        System.out.println("🔄 Saving data...");
-        System.out.println("✅ All data saved successfully!");
     }
 }

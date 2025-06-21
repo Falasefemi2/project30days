@@ -170,51 +170,25 @@ public class Admin {
 
     private void handleSupplierChoice(int choice) {
         switch (choice) {
-            case 1:
-                addNewProduct();
-                break;
-            case 2:
-                viewMyProducts();
-                break;
-            case 3:
-                updateProduct();
-                break;
-            case 4:
-                removeProduct();
-                break;
-            case 5:
-                viewOrdersForMyProducts();
-                break;
-            default:
-                System.out.println("Invalid choice!");
+            case 1 -> addNewProduct();
+            case 2 -> viewMyProducts();
+            case 3 -> updateProduct();
+            case 4 -> removeProduct();
+            case 5 -> viewOrdersForMyProducts();
+            default -> System.out.println("Invalid choice!");
         }
     }
 
     private void handleBuyerChoice(int choice) {
         switch (choice) {
-            case 1:
-                browseAllProducts();
-                break;
-            case 2:
-                searchProducts();
-                break;
-            case 3:
-                addToCart();
-                break;
-            case 4:
-                viewCart();
-                break;
-            case 5:
-                removeFromCart();
-                break;
-            case 6:
-                checkout();
-                break;
-            case 7:
-                viewOrderHistory();
-                break;
-            default:
-                System.out.println("Invalid choice!");
+            case 1 -> browseAllProducts();
+            case 2 -> searchProducts();
+            case 3 -> addToCart();
+            case 4 -> viewCart();
+            case 5 -> removeFromCart();
+            case 6 -> checkout();
+            case 7 -> viewOrderHistory();
+            default -> System.out.println("Invalid choice!");
         }
     }
 
