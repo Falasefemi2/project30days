@@ -241,3 +241,12 @@ A simple Java console application for managing a school system. It allows admini
 - Day: 27/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A cli tool to add, remove and list students and courses.
+
+## Project 28: Car Rental
+
+A simple cli tool to view cars and rent them
+
+- Project: Car Rental
+- Day: 28/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A cli tool to view cars and rent them.
