@@ -21,3 +21,6 @@ members.json
 appointments.json
 doctors.json
 patients.json
+courses.json
+lecturers.json
+students.json

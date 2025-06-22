@@ -232,3 +232,12 @@ A comprehensive Java-based clinic management system that handles doctors, patien
 - Day: 26/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A CLI tool for a clinic that makes patient book a doctor for an appointment
+
+## Project 27: School System
+
+A simple Java console application for managing a school system. It allows administrators to manage students, lecturers, and courses, as well as handle enrollments and grading.
+
+- Project: School System
+- Day: 27/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A cli tool to add, remove and list students and courses.
