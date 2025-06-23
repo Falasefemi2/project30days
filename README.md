@@ -259,3 +259,12 @@ A simple cls tool to manage products, sales and get revenues.
 - Day: 29/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A simple, command-line-based inventory management system for Femi Electronics. This application allows for the management of products, sales, and revenue tracking through a text-based interface.
+
+## Project 30: Parcel Delivery System
+
+A simple cli tool to deliver parcel to it destination from it origin.
+
+- Project: Parcel Delivery System
+- Day: 30/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: Customers create their parcel and it gets assigned to a driver to deliver it.

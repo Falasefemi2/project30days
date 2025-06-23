@@ -29,3 +29,6 @@ users.json
 vehicles.json
 new_products.json
 sales.json
+customers.json
+drivers.json
+parcels.json
