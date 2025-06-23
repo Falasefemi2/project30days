@@ -250,3 +250,12 @@ A simple cli tool to view cars and rent them
 - Day: 28/30
 - Type: Command-Line Interfac (CLI) Application
 - Description: A cli tool to view cars and rent them.
+
+## Project 29: Inventory Management system
+
+A simple cls tool to manage products, sales and get revenues.
+
+- Project: Inventory Management system
+- Day: 29/30
+- Type: Command-Line Interfac (CLI) Application
+- Description: A simple, command-line-based inventory management system for Femi Electronics. This application allows for the management of products, sales, and revenue tracking through a text-based interface.
