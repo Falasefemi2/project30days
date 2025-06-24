@@ -17,10 +17,13 @@ public class CarRentalApp {
             System.out.println("4. Return Vehicle");
             System.out.println("5. View All Rentals");
             System.out.println("6. View All Rentals From Users");
+            System.out.println("7. View All Users");
+            System.out.println("8. View All Vehicles");
             System.out.println("0. Exit");
             System.out.print("Enter choice: ");
 
             String choice = scanner.nextLine();
+
             switch (choice) {
                 case "1" -> admin.createUser();
                 case "2" -> admin.createVehicle();
@@ -40,6 +43,8 @@ public class CarRentalApp {
                 }
                 case "5" -> admin.viewAllRentals();
                 case "6" -> admin.viewAllRentalsFromUsers();
+                case "7" -> admin.viewAllUsers();
+                case "8" -> admin.viewAllVehicles();
                 case "0" -> {
                     running = false;
                     System.out.println("Exiting... Goodbye!");
